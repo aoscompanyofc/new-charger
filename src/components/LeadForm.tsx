@@ -72,8 +72,6 @@ export default function LeadForm() {
     }, 600)
   }
 
-  const directUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Olá! Quero ser acionista de um eletroposto NewCharged.')}`
-
   return (
     <section
       ref={sectionRef}
@@ -117,18 +115,6 @@ export default function LeadForm() {
               ))}
             </div>
 
-            <div className="pt-8 border-t border-white/8">
-              <p className="text-white/20 text-[10px] uppercase tracking-[0.25em] mb-4">Prefere ir direto?</p>
-              <a
-                href={directUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-white/45 hover:text-white transition-colors duration-200 text-sm group"
-              >
-                <span className="w-8 h-px bg-white/15 group-hover:bg-brand-blue group-hover:w-12 transition-all duration-300" />
-                Abrir WhatsApp sem preencher o formulário
-              </a>
-            </div>
           </div>
 
           {/* Direita — painel do formulário */}

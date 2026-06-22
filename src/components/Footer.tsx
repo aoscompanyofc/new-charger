@@ -49,16 +49,15 @@ export default function Footer({ onScrollToForm }: FooterProps) {
 
             {/* Marca */}
             <div className="lg:col-span-2">
-              <div className="flex items-center gap-3 mb-5">
-                <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-label="NewCharged" role="img">
-                  <rect width="40" height="40" rx="8" fill="#1E283B" />
-                  <path d="M8 28 L14 12 L20 22 L26 12 L32 28" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  <path d="M20 8 L17 18 H22 L19 28" stroke="#2D8EE8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                </svg>
-                <div>
-                  <p className="font-anton text-white text-xl uppercase leading-none tracking-tight">NewCharged</p>
-                  <p className="text-white/25 text-[10px] mt-0.5">NEW Engenharia e Energia</p>
-                </div>
+              <div className="mb-5">
+                <img
+                  src="/images/logo-newcharged.png"
+                  alt="NewCharged"
+                  width="180"
+                  height="72"
+                  className="h-9 w-auto object-contain"
+                />
+                <p className="text-white/25 text-[10px] mt-3">NEW Engenharia e Energia</p>
               </div>
               <p className="text-white/25 text-xs leading-relaxed max-w-sm">
                 Desenvolvimento, implantação e operação de infraestrutura de recarga elétrica em pontos de alto fluxo no Brasil.

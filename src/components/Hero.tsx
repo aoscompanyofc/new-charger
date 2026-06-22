@@ -48,6 +48,17 @@ export default function Hero({ onScrollToForm }: HeroProps) {
           {/* ── Texto ── */}
           <div className="lg:col-span-7 xl:col-span-6">
 
+            {/* Logo */}
+            <div className="mb-8">
+              <img
+                src="/images/logo-newcharged.png"
+                alt="NewCharged"
+                width="180"
+                height="72"
+                className="h-10 sm:h-12 w-auto object-contain"
+              />
+            </div>
+
             {/* Eyebrow */}
             <p
               ref={eyebrowRef}
