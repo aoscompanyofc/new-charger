@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-steel-deep: #172339;
+  --color-steel-mid: #1E283B;
+  --color-brand-blue: #2D8EE8;
+  --color-brand-blue-dim: #1A66C0;
+  --color-solar-white: #FFFFFF;
+  --color-tech-black: #000000;
+  --font-anton: 'Anton', Impact, sans-serif;
+  --font-body: 'Montserrat', Inter, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Inter', sans-serif;
+  background-color: #172339;
+  color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  min-height: 100svh;
+}
+
+.font-anton {
+  font-family: 'Anton', Impact, sans-serif;
+}
+
+/* Utility: visually hidden until GSAP sets autoAlpha=1 */
+.gsap-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
