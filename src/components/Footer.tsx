@@ -55,7 +55,7 @@ export default function Footer({ onScrollToForm }: FooterProps) {
                   alt="NewCharged"
                   width="180"
                   height="72"
-                  className="h-9 w-auto object-contain"
+                  className="h-14 sm:h-16 w-auto object-contain"
                   style={{ mixBlendMode: 'screen' }}
                 />
                 <p className="text-white/25 text-[10px] mt-3">NEW Engenharia e Energia</p>
