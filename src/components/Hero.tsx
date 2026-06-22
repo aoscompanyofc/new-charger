@@ -56,6 +56,7 @@ export default function Hero({ onScrollToForm }: HeroProps) {
                 width="180"
                 height="72"
                 className="h-10 sm:h-12 w-auto object-contain"
+                style={{ mixBlendMode: 'screen' }}
               />
             </div>
 
