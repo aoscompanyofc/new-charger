@@ -45,7 +45,7 @@ const stations: Station[] = [
     location: 'Região Metropolitana — MG',
     description: 'Modelo híbrido — abastecimento convencional e mobilidade elétrica integrados.',
     forecast: 'Jul. 2026',
-    img: '/images/posto-cinco-mil.webp',
+    img: '/images/posto-cinco-mil.jpg',
   },
   {
     num: '05',
