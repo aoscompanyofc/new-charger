@@ -29,7 +29,6 @@ const stations: Station[] = [
     description: 'Polo turístico e gastronômico, um dos maiores centros de consumo de Minas Gerais.',
     forecast: 'Jul. 2026',
     img: '/images/mercado-central.jpg',
-    highlight: 'Alta demanda',
   },
   {
     num: '03',
