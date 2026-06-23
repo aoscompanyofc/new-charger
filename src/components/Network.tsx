@@ -53,7 +53,7 @@ const stations: Station[] = [
     location: 'Pampulha — BH',
     description: 'Uma das regiões mais valorizadas de BH, público aderente ao perfil do veículo elétrico.',
     forecast: 'Jul. 2026',
-    img: '/images/fast-tenis.webp',
+    img: '/images/fast-tenis.jpg',
     highlight: 'Alto poder aquisitivo',
   },
   {
