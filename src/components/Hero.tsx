@@ -58,8 +58,7 @@ export default function Hero({ onScrollToForm }: HeroProps) {
 
       {/* ── Eletroposto mobile: absoluto à direita ── */}
       <div
-        ref={imgRef}
-        className={`absolute right-0 bottom-0 w-[55vw] sm:w-[45vw] h-[70vh] lg:hidden pointer-events-none will-change-transform ${prefersReduced ? '' : 'gsap-hidden'}`}
+        className="absolute right-0 bottom-0 w-[55vw] sm:w-[45vw] h-[70vh] lg:hidden pointer-events-none"
         aria-hidden="true"
       >
         {/* Gradiente lateral para fundir com o fundo */}
@@ -156,6 +155,7 @@ export default function Hero({ onScrollToForm }: HeroProps) {
 
           {/* ── Imagem desktop + chips ── */}
           <div
+            ref={imgRef}
             className={`hidden lg:block lg:col-span-5 xl:col-span-6 relative h-[86vh] will-change-transform ${prefersReduced ? '' : 'gsap-hidden'}`}
             aria-hidden="true"
           >
