@@ -99,8 +99,8 @@ export default function FeaturedStation({ onScrollToNetwork }: FeaturedStationPr
           {/* Imagem */}
           <div className="relative rounded-2xl overflow-hidden min-h-[320px] lg:min-h-auto bg-steel-mid">
             <img
-              src="/images/eletroposto-featured.webp"
-              alt="Eletroposto NewCharged — Rodoviária de BH"
+              src="/images/rodoviaria-bh.webp"
+              alt="Rodoviária de Belo Horizonte — NewCharged"
               width="600"
               height="849"
               loading="lazy"
