@@ -7,8 +7,8 @@ const config: Config = {
       colors: {
         'steel-deep': '#172339',
         'steel-mid': '#1E283B',
-        'brand-blue': '#2D8EE8',
-        'brand-blue-dim': '#1A66C0',
+        'brand-blue': '#1C63D8',
+        'brand-blue-dim': '#1450B4',
         'solar-white': '#FFFFFF',
         'tech-black': '#000000',
       },
