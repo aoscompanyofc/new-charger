@@ -37,7 +37,7 @@ const stations: Station[] = [
     location: 'Belo Horizonte — MG',
     description: 'Fluxo recorrente de consumidores e comerciantes com alto potencial de fidelização.',
     forecast: 'Jul. 2026',
-    img: '/images/feira-produtores.webp',
+    img: '/images/feira-produtores.jpg',
   },
   {
     num: '04',
