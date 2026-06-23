@@ -2,11 +2,6 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { useReducedMotion } from '../hooks/useReducedMotion'
-import { IconPhone } from './Icons'
-
-const WHATSAPP_URL =
-  'https://wa.me/5531997328451?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20agendar%20uma%20conversa%20com%20um%20consultor%20sobre%20os%20eletropostos%20da%20NewCharged.'
-
 const benefits = [
   'Mercado em forte crescimento',
   'Infraestrutura com alto potencial de valorização',
@@ -76,18 +71,6 @@ export default function WhyInvest() {
               </div>
             </div>
 
-            <div className="border-t border-white/8 pt-8">
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 text-white/60 hover:text-white text-xs uppercase tracking-[0.15em] transition-colors duration-200 group"
-              >
-                <span className="w-8 h-px bg-white/20 group-hover:bg-brand-blue group-hover:w-12 transition-all duration-300" />
-                <IconPhone size={14} className="text-brand-blue" />
-                Falar com um consultor
-              </a>
-            </div>
           </div>
 
           {/* Direita — lista numerada, sem cards */}
