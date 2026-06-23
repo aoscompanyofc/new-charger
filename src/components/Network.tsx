@@ -20,7 +20,7 @@ const stations: Station[] = [
     location: 'Belo Horizonte — MG',
     description: 'Corredor viário que conecta Pampulha, Centro, Vetor Norte e Aeroporto de Confins.',
     forecast: '2º sem. 2026',
-    img: '/images/pampulha-mall.webp',
+    img: '/images/pampulha-mall.jpg',
   },
   {
     num: '02',
@@ -28,7 +28,7 @@ const stations: Station[] = [
     location: 'Belo Horizonte — MG',
     description: 'Polo turístico e gastronômico, um dos maiores centros de consumo de Minas Gerais.',
     forecast: 'Jul. 2026',
-    img: '/images/mercado-central.webp',
+    img: '/images/mercado-central.jpg',
     highlight: 'Alta demanda',
   },
   {
