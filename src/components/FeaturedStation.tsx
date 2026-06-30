@@ -126,7 +126,7 @@ export default function FeaturedStation({ onScrollToNetwork }: FeaturedStationPr
                 className={`relative rounded-2xl p-6 lg:p-8 will-change-transform overflow-hidden transition-colors duration-300
                   ${proj.featured
                     ? 'bg-brand-blue/10 border border-brand-blue/30'
-                    : 'bg-white/3 border border-white/8 hover:border-white/16'
+                    : 'bg-white border border-white/90'
                   } ${prefersReduced ? '' : 'gsap-hidden'}`}
               >
                 {/* Glow de fundo no destaque */}
@@ -138,28 +138,28 @@ export default function FeaturedStation({ onScrollToNetwork }: FeaturedStationPr
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-2">
                     {proj.featured && <span className="w-1.5 h-1.5 rounded-full bg-brand-blue animate-pulse" />}
-                    <p className={`text-[10px] font-bold uppercase tracking-[0.3em] ${proj.featured ? 'text-brand-blue' : 'text-white/35'}`}>
+                    <p className={`text-[10px] font-bold uppercase tracking-[0.3em] ${proj.featured ? 'text-brand-blue' : 'text-steel-deep/50'}`}>
                       {proj.label}
                     </p>
                   </div>
                   <span className={`text-[10px] font-mono px-2.5 py-1 rounded-full border ${
-                    proj.featured ? 'border-brand-blue/30 text-brand-blue/70 bg-brand-blue/10' : 'border-white/8 text-white/25 bg-white/4'
+                    proj.featured ? 'border-brand-blue/30 text-brand-blue/70 bg-brand-blue/10' : 'border-steel-deep/15 text-steel-deep/40 bg-steel-deep/5'
                   }`}>
                     {proj.hours}
                   </span>
                 </div>
 
                 {/* Divisor */}
-                <div className={`w-8 h-px mb-5 ${proj.featured ? 'bg-brand-blue/40' : 'bg-white/10'}`} />
+                <div className={`w-8 h-px mb-5 ${proj.featured ? 'bg-brand-blue/40' : 'bg-steel-deep/15'}`} />
 
                 {/* Valor */}
                 <div className="flex items-baseline gap-1 mb-2">
-                  <span className={`text-xs font-bold ${proj.featured ? 'text-white/50' : 'text-white/25'}`}>R$</span>
-                  <span className={`font-anton text-3xl lg:text-[2.4rem] leading-none ${proj.featured ? 'text-white' : 'text-white/55'}`}>
+                  <span className={`text-xs font-bold ${proj.featured ? 'text-white/50' : 'text-steel-deep/40'}`}>R$</span>
+                  <span className={`font-anton text-3xl lg:text-[2.4rem] leading-none ${proj.featured ? 'text-white' : 'text-steel-deep'}`}>
                     {proj.value.replace('R$ ', '')}
                   </span>
                 </div>
-                <p className={`text-[10px] uppercase tracking-[0.2em] ${proj.featured ? 'text-white/35' : 'text-white/20'}`}>
+                <p className={`text-[10px] uppercase tracking-[0.2em] ${proj.featured ? 'text-white/35' : 'text-steel-deep/35'}`}>
                   por mês / cota
                 </p>
               </div>
