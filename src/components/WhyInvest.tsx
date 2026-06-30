@@ -13,9 +13,9 @@ const benefits = [
 ]
 
 const metrics = [
-  { value: '6+',     label: 'Pontos estratégicos' },
-  { value: '60 kW',  label: 'Potência por ponto' },
-  { value: '24 h',   label: 'Operação contínua' },
+  { value: '6+',    label: 'Pontos' },
+  { value: '60kW',  label: 'Potência' },
+  { value: '24h',   label: 'Operação' },
 ]
 
 export default function WhyInvest() {
@@ -70,11 +70,11 @@ export default function WhyInvest() {
             </p>
 
             {/* Métricas */}
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-3">
               {metrics.map(m => (
-                <div key={m.value} className="rounded-xl border border-white/8 bg-white/3 px-4 py-5">
-                  <p className="font-anton text-2xl text-white leading-none mb-1.5">{m.value}</p>
-                  <p className="text-white/35 text-[10px] uppercase tracking-[0.18em] leading-snug">{m.label}</p>
+                <div key={m.value} className="rounded-xl border border-white/8 bg-white/3 px-3 py-4 flex flex-col items-center text-center sm:items-start sm:text-left sm:px-4 sm:py-5">
+                  <p className="font-anton text-2xl sm:text-2xl text-white leading-none mb-1.5">{m.value}</p>
+                  <p className="text-white/35 text-[9px] sm:text-[10px] uppercase tracking-[0.15em] leading-snug">{m.label}</p>
                 </div>
               ))}
             </div>
