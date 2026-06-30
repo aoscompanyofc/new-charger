@@ -130,22 +130,22 @@ export default function Hero({ onScrollToForm }: HeroProps) {
         </div>
 
         {/* Base — eletroposto centralizado colado no rodapé */}
-        <div className="relative flex-1 flex items-end justify-center pb-40" aria-hidden="true">
+        <div className="relative flex-1 flex items-center justify-center" aria-hidden="true">
           {/* Glow azul sutil atrás do carregador */}
           <div
-            className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full pointer-events-none"
-            style={{ background: 'radial-gradient(circle, rgba(43,126,255,0.18) 0%, transparent 70%)' }}
+            className="absolute inset-0 flex items-center justify-center pointer-events-none"
+            style={{ background: 'radial-gradient(circle at 50% 60%, rgba(43,126,255,0.15) 0%, transparent 65%)' }}
           />
           <img
             src="/images/hero-charger-cutout.webp"
             alt=""
             width="700"
             height="990"
-            className="relative z-10 h-[78%] w-auto object-contain object-bottom drop-shadow-2xl"
+            className="relative z-10 h-full w-auto object-contain"
             style={{
-              maskImage: 'linear-gradient(to top, transparent 0%, black 10%)',
-              WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 10%)',
-              filter: 'drop-shadow(0 0 32px rgba(43,126,255,0.15))',
+              maskImage: 'linear-gradient(to top, transparent 0%, black 12%)',
+              WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 12%)',
+              filter: 'drop-shadow(0 0 28px rgba(43,126,255,0.18))',
             }}
           />
         </div>
