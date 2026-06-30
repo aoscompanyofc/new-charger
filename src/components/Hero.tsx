@@ -47,6 +47,17 @@ export default function Hero({ onScrollToForm }: HeroProps) {
       className="relative h-screen overflow-hidden flex items-center bg-steel-deep"
       aria-label="Hero — NewCharged"
     >
+      {/* Background sutil — Rodoviária BH */}
+      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+        <img
+          src="/images/rodoviaria-bh.webp"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-[#172339]/88" />
+      </div>
+
       {/* Grid de fundo */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <div className="absolute inset-0" style={{
