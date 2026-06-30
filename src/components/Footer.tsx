@@ -1,4 +1,4 @@
-import { IconPhone, IconMail, IconGlobe, IconMapPin } from './Icons'
+import { IconPhone, IconMail, IconMapPin } from './Icons'
 
 const WHATSAPP_URL =
   'https://wa.me/5531997328451?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20conhecer%20as%20oportunidades%20de%20investimento%20nos%20eletropostos%20da%20NewCharged.'
@@ -83,15 +83,7 @@ export default function Footer({ onScrollToForm }: FooterProps) {
                   <IconMail size={13} className="text-brand-blue flex-shrink-0" />
                   contato@energianew.com.br
                 </a>
-                <a
-                  href="https://newengenharia.com.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-white/80 hover:text-white transition-colors duration-200 text-sm group"
-                >
-                  <IconGlobe size={13} className="text-brand-blue flex-shrink-0" />
-                  newengenharia.com.br
-                </a>
+
                 <div className="flex items-start gap-3 text-white/80 text-sm">
                   <IconMapPin size={13} className="text-brand-blue flex-shrink-0 mt-0.5" />
                   <span className="leading-relaxed">
