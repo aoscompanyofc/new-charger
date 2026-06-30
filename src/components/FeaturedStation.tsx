@@ -8,9 +8,9 @@ interface FeaturedStationProps {
 }
 
 const projections = [
-  { label: 'Conservador', hours: '4 h/dia', value: 'R$ 1.466', cents: ',48/mês' },
-  { label: 'Moderado',    hours: '5 h/dia', value: 'R$ 1.833', cents: ',10/mês', featured: true },
-  { label: 'Otimista',   hours: '7 h/dia', value: 'R$ 2.566', cents: ',34/mês' },
+  { label: 'Conservador', hours: '4 h/dia', value: 'R$ 1.688', cents: ',00/mês' },
+  { label: 'Moderado',    hours: '5 h/dia', value: 'R$ 2.110', cents: ',00/mês', featured: true },
+  { label: 'Otimista',   hours: '7 h/dia', value: 'R$ 2.955', cents: ',00/mês' },
 ]
 
 const differentials = [
