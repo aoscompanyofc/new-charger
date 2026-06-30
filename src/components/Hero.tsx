@@ -136,7 +136,7 @@ export default function Hero({ onScrollToForm }: HeroProps) {
             alt=""
             width="700"
             height="990"
-            className="h-full w-auto object-contain object-bottom"
+            className="h-[80%] w-auto object-contain object-bottom"
             style={{
               maskImage: 'linear-gradient(to top, transparent 0%, black 12%)',
               WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 12%)',
