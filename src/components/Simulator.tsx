@@ -13,9 +13,6 @@ function calcular(horas: number) {
   return { por_cota, rent }
 }
 
-function fmt(n: number) {
-  return n.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
-}
 
 export default function Simulator() {
   const sectionRef = useRef<HTMLElement>(null)
