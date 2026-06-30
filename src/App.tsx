@@ -6,6 +6,7 @@ import Network from './components/Network'
 import Simulator from './components/Simulator'
 import LeadForm from './components/LeadForm'
 import Footer from './components/Footer'
+import EnergyBackground from './components/EnergyBackground'
 
 export default function App() {
   const formRef = useRef<HTMLDivElement>(null)
@@ -21,6 +22,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-steel-deep">
+      <EnergyBackground />
       <Hero onScrollToForm={scrollToForm} />
       <WhyInvest />
       <FeaturedStation onScrollToNetwork={scrollToNetwork} />

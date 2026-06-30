@@ -15,16 +15,18 @@ const chips = [
 ]
 
 export default function Hero({ onScrollToForm }: HeroProps) {
-  const containerRef = useRef<HTMLElement>(null)
-  const eyebrowRef   = useRef<HTMLParagraphElement>(null)
-  const subtitleRef  = useRef<HTMLParagraphElement>(null)
-  const statsRef     = useRef<HTMLDivElement>(null)
-  const ctaRef       = useRef<HTMLDivElement>(null)
-  const imgRef       = useRef<HTMLDivElement>(null)
+  const containerRef        = useRef<HTMLElement>(null)
+  const eyebrowRef          = useRef<HTMLParagraphElement>(null)
+  const subtitleRef         = useRef<HTMLParagraphElement>(null)
+  const statsRef            = useRef<HTMLDivElement>(null)
+  const ctaRef              = useRef<HTMLDivElement>(null)
+  const imgRef              = useRef<HTMLDivElement>(null)
+  const chargerMobileRef    = useRef<HTMLDivElement>(null)
   const prefersReduced = useReducedMotion()
 
   useGSAP(() => {
     if (prefersReduced) return
+
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
     tl.fromTo(eyebrowRef.current,  { autoAlpha: 0, y: -8 }, { autoAlpha: 1, y: 0, duration: 0.5 }, 0)
       .fromTo(subtitleRef.current, { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 0.6 }, 0.3)
@@ -39,6 +41,24 @@ export default function Hero({ onScrollToForm }: HeroProps) {
         { autoAlpha: 1, y: 0, scale: 1, duration: 0.5, stagger: 0.12, ease: 'back.out(1.6)', delay: 0.75 }
       )
     }
+
+    // Mobile charger: entrada suave
+    gsap.fromTo(chargerMobileRef.current,
+      { autoAlpha: 0, y: 28 },
+      { autoAlpha: 1, y: 0, duration: 1.1, ease: 'power2.out', delay: 0.45 }
+    )
+
+    // Mobile charger: parallax ao scroll — desce lentamente ao rolar
+    gsap.to(chargerMobileRef.current, {
+      y: 55,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: 1.8,
+      },
+    })
   }, { scope: containerRef, dependencies: [prefersReduced] })
 
   return (
@@ -129,8 +149,8 @@ export default function Hero({ onScrollToForm }: HeroProps) {
           </div>
         </div>
 
-        {/* Base — eletroposto centralizado colado no rodapé */}
-        <div className="relative flex-1 flex items-center justify-center" aria-hidden="true">
+        {/* Base — eletroposto centralizado */}
+        <div ref={chargerMobileRef} className="relative flex-1 flex items-center justify-center" aria-hidden="true">
           {/* Glow azul sutil atrás do carregador */}
           <div
             className="absolute inset-0 flex items-center justify-center pointer-events-none"
@@ -141,7 +161,7 @@ export default function Hero({ onScrollToForm }: HeroProps) {
             alt=""
             width="700"
             height="990"
-            className="relative z-10 h-full w-auto object-contain"
+            className="relative z-10 h-[68%] w-auto object-contain"
             style={{
               maskImage: 'linear-gradient(to top, transparent 0%, black 12%)',
               WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 12%)',
