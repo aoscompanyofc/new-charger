@@ -44,7 +44,7 @@ export default function Hero({ onScrollToForm }: HeroProps) {
   return (
     <section
       ref={containerRef}
-      className="relative h-screen overflow-hidden flex items-center bg-steel-deep"
+      className="relative h-screen overflow-hidden bg-steel-deep flex flex-col lg:flex-row lg:items-center"
       aria-label="Hero — NewCharged"
     >
       {/* Background sutil — Rodoviária BH */}
@@ -67,40 +67,21 @@ export default function Hero({ onScrollToForm }: HeroProps) {
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-steel-deep to-transparent" />
       </div>
 
-      {/* ── Eletroposto mobile: absoluto à direita ── */}
-      <div
-        className="absolute right-0 bottom-0 w-[55vw] sm:w-[45vw] h-[70vh] lg:hidden pointer-events-none"
-        aria-hidden="true"
-      >
-        {/* Gradiente lateral para fundir com o fundo */}
-        <div className="absolute inset-0 bg-gradient-to-r from-steel-deep via-steel-deep/60 to-transparent z-10" />
-        <img
-          src="/images/hero-charger-cutout.webp"
-          alt=""
-          width="700"
-          height="990"
-          className="h-full w-auto object-contain object-bottom ml-auto"
-          style={{
-            maskImage: 'linear-gradient(to top, transparent 0%, black 18%)',
-            WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 18%)',
-          }}
-        />
-      </div>
-
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      {/* ── Texto (topo no mobile, esquerda no desktop) ── */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 flex-shrink-0 pt-10 sm:pt-14 lg:pt-0">
         <div className="grid lg:grid-cols-12 items-center gap-6 lg:gap-8">
 
-          {/* ── Texto ── */}
+          {/* Texto */}
           <div className="lg:col-span-7 xl:col-span-6">
 
             {/* Logo */}
-            <div className="mb-6">
+            <div className="mb-5 sm:mb-6">
               <img
                 src="/images/logo-newcharged.png"
                 alt="NewCharged"
                 width="280"
                 height="112"
-                className="h-[5rem] sm:h-[6.5rem] lg:h-[7.5rem] w-auto object-contain"
+                className="h-[4rem] sm:h-[6.5rem] lg:h-[7.5rem] w-auto object-contain"
                 style={{ mixBlendMode: 'screen' }}
               />
             </div>
@@ -108,23 +89,23 @@ export default function Hero({ onScrollToForm }: HeroProps) {
             {/* Eyebrow */}
             <p
               ref={eyebrowRef}
-              className={`text-brand-blue text-[10px] font-bold uppercase tracking-[0.35em] mb-4 ${prefersReduced ? '' : 'gsap-hidden'}`}
+              className={`text-brand-blue text-[10px] font-bold uppercase tracking-[0.35em] mb-3 sm:mb-4 ${prefersReduced ? '' : 'gsap-hidden'}`}
             >
               Belo Horizonte · Junho 2026
             </p>
 
             {/* Título */}
-            <h1 className="font-anton text-[1.75rem] sm:text-[2.4rem] lg:text-[3rem] xl:text-[3.6rem] text-white uppercase leading-[1.08] tracking-tight mb-4">
+            <h1 className="font-anton text-[1.5rem] sm:text-[2.4rem] lg:text-[3rem] xl:text-[3.6rem] text-white uppercase leading-[1.08] tracking-tight mb-3 sm:mb-4">
               Inauguração dos 2 novos eletropostos da Rodoviária de Belo Horizonte
             </h1>
 
             {/* Linha de acento */}
-            <div className="w-10 h-px bg-brand-blue mb-4" aria-hidden="true" />
+            <div className="w-10 h-px bg-brand-blue mb-3 sm:mb-4" aria-hidden="true" />
 
-            {/* Subtítulo */}
+            {/* Subtítulo — oculto no mobile para dar espaço ao carregador */}
             <p
               ref={subtitleRef}
-              className={`text-white/60 text-sm lg:text-base leading-relaxed max-w-md mb-6 ${prefersReduced ? '' : 'gsap-hidden'}`}
+              className={`hidden sm:block text-white/60 text-sm lg:text-base leading-relaxed max-w-md mb-6 ${prefersReduced ? '' : 'gsap-hidden'}`}
             >
               A mobilidade elétrica já é uma realidade. A NewCharged expande sua rede com ativos estratégicos em regiões de alto fluxo — conectando tecnologia, localização e rentabilidade.
             </p>
@@ -132,7 +113,7 @@ export default function Hero({ onScrollToForm }: HeroProps) {
             {/* Stats */}
             <div
               ref={statsRef}
-              className={`flex items-start gap-6 sm:gap-10 mb-7 ${prefersReduced ? '' : 'gsap-hidden'}`}
+              className={`flex items-start gap-5 sm:gap-10 mb-5 sm:mb-7 ${prefersReduced ? '' : 'gsap-hidden'}`}
             >
               {[
                 { value: '60kW',  label: 'Potência' },
@@ -140,17 +121,17 @@ export default function Hero({ onScrollToForm }: HeroProps) {
                 { value: 'R$50K', label: 'Cota mínima' },
               ].map(({ value, label }) => (
                 <div key={label}>
-                  <p className="font-anton text-2xl sm:text-3xl text-white leading-none">{value}</p>
+                  <p className="font-anton text-xl sm:text-3xl text-white leading-none">{value}</p>
                   <p className="text-white/35 text-[10px] uppercase tracking-[0.2em] mt-1.5">{label}</p>
                 </div>
               ))}
             </div>
 
             {/* CTAs */}
-            <div ref={ctaRef} className={`flex items-center gap-5 sm:gap-7 ${prefersReduced ? '' : 'gsap-hidden'}`}>
+            <div ref={ctaRef} className={`flex items-center gap-4 sm:gap-7 ${prefersReduced ? '' : 'gsap-hidden'}`}>
               <button
                 onClick={onScrollToForm}
-                className="bg-brand-blue hover:bg-brand-blue-dim text-white font-bold text-[11px] uppercase tracking-[0.15em] px-6 sm:px-7 py-3.5 sm:py-4 rounded-lg transition-colors duration-200"
+                className="bg-brand-blue hover:bg-brand-blue-dim text-white font-bold text-[11px] uppercase tracking-[0.15em] px-5 sm:px-7 py-3.5 sm:py-4 rounded-lg transition-colors duration-200"
                 aria-label="Receber apresentação completa"
               >
                 Receber Apresentação
@@ -204,6 +185,26 @@ export default function Hero({ onScrollToForm }: HeroProps) {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* ── Eletroposto mobile: centralizado embaixo ── */}
+      <div
+        className="lg:hidden relative z-10 flex-1 flex items-end justify-center overflow-hidden"
+        aria-hidden="true"
+      >
+        {/* Fade de cima para fundir com o fundo */}
+        <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-steel-deep/80 to-transparent z-10 pointer-events-none" />
+        <img
+          src="/images/hero-charger-cutout.webp"
+          alt=""
+          width="700"
+          height="990"
+          className="h-full max-h-[46vh] w-auto object-contain object-bottom"
+          style={{
+            maskImage: 'linear-gradient(to top, transparent 0%, black 22%)',
+            WebkitMaskImage: 'linear-gradient(to top, transparent 0%, black 22%)',
+          }}
+        />
       </div>
 
       {/* Scroll hint */}
