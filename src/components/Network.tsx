@@ -103,9 +103,9 @@ function StationCard({ s, reduced }: { s: Station; reduced: boolean }) {
           decoding="async"
           onLoad={() => setImgLoaded(true)}
           onError={() => {}}
-          className={`absolute inset-0 w-full h-full object-cover group-hover:scale-[1.04] transition-all duration-600 ${imgLoaded ? 'opacity-35 group-hover:opacity-50' : 'opacity-0'}`}
+          className={`absolute inset-0 w-full h-full object-cover group-hover:scale-[1.04] transition-all duration-600 ${imgLoaded ? 'opacity-90 group-hover:opacity-100' : 'opacity-0'}`}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-steel-mid via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-steel-mid via-steel-mid/60 to-transparent" />
 
         {/* Header da imagem */}
         <div className="absolute top-4 left-5 right-5 flex items-center justify-between">
