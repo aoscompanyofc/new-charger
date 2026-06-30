@@ -124,7 +124,7 @@ export default function Hero({ onScrollToForm }: HeroProps) {
             {/* Subtítulo */}
             <p
               ref={subtitleRef}
-              className={`text-white/60 text-sm lg:text-base leading-relaxed max-w-md mb-6 hidden sm:block ${prefersReduced ? '' : 'gsap-hidden'}`}
+              className={`text-white/60 text-sm lg:text-base leading-relaxed max-w-md mb-6 ${prefersReduced ? '' : 'gsap-hidden'}`}
             >
               A mobilidade elétrica já é uma realidade. A NewCharged expande sua rede com ativos estratégicos em regiões de alto fluxo — conectando tecnologia, localização e rentabilidade.
             </p>

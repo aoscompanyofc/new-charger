@@ -39,7 +39,7 @@ export default function Simulator() {
   return (
     <section
       ref={sectionRef}
-      className="bg-steel-deep py-16 sm:py-20 lg:py-28"
+      className="bg-[#111b2c] py-16 sm:py-20 lg:py-28"
       aria-labelledby="simulator-heading"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -86,7 +86,7 @@ export default function Simulator() {
                   step={1}
                   value={horas}
                   onChange={e => setHoras(Number(e.target.value))}
-                  className="w-full appearance-none h-1 rounded-full outline-none cursor-pointer"
+                  className="w-full appearance-none h-2 rounded-full outline-none cursor-pointer"
                   style={{
                     background: `linear-gradient(to right, #2B7EFF ${pct}%, rgba(255,255,255,0.1) ${pct}%)`,
                   }}
@@ -109,11 +109,11 @@ export default function Simulator() {
                   <button
                     key={ref.h}
                     onClick={() => setHoras(ref.h)}
-                    className={`flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] transition-colors duration-150 ${
+                    className={`flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] transition-colors duration-150 py-2 ${
                       horas === ref.h ? 'text-brand-blue' : 'text-white/25 hover:text-white/50'
                     }`}
                   >
-                    <span className={`w-1 h-1 rounded-full flex-shrink-0 ${horas === ref.h ? 'bg-brand-blue' : 'bg-white/20'}`} />
+                    <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${horas === ref.h ? 'bg-brand-blue' : 'bg-white/20'}`} />
                     {ref.label} — {ref.h}h/dia
                   </button>
                 ))}
@@ -130,7 +130,7 @@ export default function Simulator() {
                 <div className="flex items-baseline gap-1 mb-1">
                   <span className="text-white/40 text-lg font-anton">R$</span>
                   <span className="font-anton text-[3.5rem] sm:text-[4.5rem] lg:text-[5rem] text-white leading-none">
-                    {fmt(por_cota).replace(',', '.')}
+                    {por_cota.toLocaleString('pt-BR')}
                   </span>
                 </div>
                 <p className="text-white/30 text-xs uppercase tracking-[0.2em]">/mês por cota</p>

@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { useReducedMotion } from '../hooks/useReducedMotion'
+
 const benefits = [
   'Mercado em forte crescimento',
   'Infraestrutura com alto potencial de valorização',
@@ -11,10 +12,16 @@ const benefits = [
   'Participação em ativos reais',
 ]
 
+const metrics = [
+  { value: '6+',     label: 'Pontos estratégicos' },
+  { value: '60 kW',  label: 'Potência por ponto' },
+  { value: '24 h',   label: 'Operação contínua' },
+]
+
 export default function WhyInvest() {
   const sectionRef = useRef<HTMLElement>(null)
-  const listRef = useRef<HTMLUListElement>(null)
-  const leftRef = useRef<HTMLDivElement>(null)
+  const listRef    = useRef<HTMLUListElement>(null)
+  const leftRef    = useRef<HTMLDivElement>(null)
   const prefersReduced = useReducedMotion()
 
   useGSAP(() => {
@@ -45,7 +52,7 @@ export default function WhyInvest() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start">
 
-          {/* Esquerda — declaração editorial */}
+          {/* Esquerda */}
           <div ref={leftRef} className={prefersReduced ? '' : 'gsap-hidden'}>
             <p className="text-brand-blue text-[10px] font-bold uppercase tracking-[0.35em] mb-8">
               Por que investir
@@ -62,28 +69,31 @@ export default function WhyInvest() {
               A NewCharged desenvolve e opera eletropostos em pontos de alta demanda, preparados para atender o crescimento acelerado da frota de veículos elétricos no Brasil.
             </p>
 
-            {/* Grande número decorativo */}
-            <div className="relative mb-12">
-              <p className="font-anton text-[5rem] sm:text-[8rem] leading-none text-white/4 select-none" aria-hidden="true">6+</p>
-              <div className="absolute bottom-3 left-0">
-                <p className="font-anton text-3xl text-white">6 pontos estratégicos</p>
-                <p className="text-white/35 text-xs uppercase tracking-[0.2em] mt-2">em Belo Horizonte e região</p>
-              </div>
+            {/* Métricas */}
+            <div className="grid grid-cols-3 gap-4">
+              {metrics.map(m => (
+                <div key={m.value} className="rounded-xl border border-white/8 bg-white/3 px-4 py-5">
+                  <p className="font-anton text-2xl text-white leading-none mb-1.5">{m.value}</p>
+                  <p className="text-white/35 text-[10px] uppercase tracking-[0.18em] leading-snug">{m.label}</p>
+                </div>
+              ))}
             </div>
-
           </div>
 
-          {/* Direita — lista numerada, sem cards */}
+          {/* Direita — lista */}
           <div>
             <p className="text-white/25 text-[10px] uppercase tracking-[0.3em] mb-6">Benefícios</p>
             <ul ref={listRef} role="list" className="space-y-0">
               {benefits.map((benefit, i) => (
                 <li
                   key={i}
-                  className={`flex items-start gap-5 py-5 border-b border-white/6 last:border-b-0 will-change-transform ${prefersReduced ? '' : 'gsap-hidden'}`}
+                  className={`flex items-start gap-4 py-5 border-b border-white/6 last:border-b-0 will-change-transform ${prefersReduced ? '' : 'gsap-hidden'}`}
                 >
-                  <span className="text-brand-blue text-[10px] font-mono mt-0.5 flex-shrink-0 w-6 text-right">
-                    {String(i + 1).padStart(2, '0')}
+                  {/* Check */}
+                  <span className="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-brand-blue/15 border border-brand-blue/30 flex items-center justify-center">
+                    <svg width="9" height="9" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                      <path d="M2 5l2.5 2.5L8 2.5" stroke="#2B7EFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   </span>
                   <span className="text-white/75 text-sm lg:text-base leading-snug">{benefit}</span>
                 </li>
