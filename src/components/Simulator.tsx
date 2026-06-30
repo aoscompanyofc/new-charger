@@ -3,20 +3,14 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { useReducedMotion } from '../hooks/useReducedMotion'
 
-const DELTA_KWH   = 1.75   // R$/kWh (venda 2,50 - compra 0,75)
-const POTENCIA_KW = 60
-const DIAS_MES    = 365 / 12
-const COTAS       = 2
-const COTA_VALOR  = 50_000
+// Fórmula calibrada: 4h=1688, 5h=2110, 7h=2955 → ~422/hora
+const RENDIMENTO_POR_HORA = 422
+const COTA_VALOR = 50_000
 
 function calcular(horas: number) {
-  const diario   = horas * POTENCIA_KW * DELTA_KWH
-  const mensal   = diario * DIAS_MES
-  const subtotal = mensal * 0.80          // −10% software −10% imposto
-  const liquido  = subtotal * 0.65        // −10% O&M −15% aluguel −10% adm
-  const por_cota = liquido / COTAS
+  const por_cota = Math.round(horas * RENDIMENTO_POR_HORA)
   const rent     = (por_cota / COTA_VALOR) * 100
-  return { por_cota, rent, mensal }
+  return { por_cota, rent }
 }
 
 function fmt(n: number) {
@@ -29,7 +23,7 @@ export default function Simulator() {
   const prefersReduced = useReducedMotion()
 
   const [horas, setHoras] = useState(5)
-  const resultado = calcular(horas)
+  const { por_cota, rent } = calcular(horas)
 
   useGSAP(() => {
     if (prefersReduced) return
@@ -136,7 +130,7 @@ export default function Simulator() {
                 <div className="flex items-baseline gap-1 mb-1">
                   <span className="text-white/40 text-lg font-anton">R$</span>
                   <span className="font-anton text-[3.5rem] sm:text-[4.5rem] lg:text-[5rem] text-white leading-none">
-                    {fmt(resultado.por_cota).replace(',', '.')}
+                    {fmt(por_cota).replace(',', '.')}
                   </span>
                 </div>
                 <p className="text-white/30 text-xs uppercase tracking-[0.2em]">/mês por cota</p>
@@ -147,7 +141,7 @@ export default function Simulator() {
                 <div className="w-8 h-px bg-white/10" />
                 <div>
                   <p className="text-white/25 text-[10px] uppercase tracking-[0.3em] mb-1">Rentabilidade</p>
-                  <p className="font-anton text-2xl text-brand-blue">{resultado.rent.toFixed(2).replace('.', ',')}%<span className="text-white/30 text-sm font-sans font-normal ml-1">ao mês</span></p>
+                  <p className="font-anton text-2xl text-brand-blue">{rent.toFixed(2).replace('.', ',')}%<span className="text-white/30 text-sm font-sans font-normal ml-1">ao mês</span></p>
                 </div>
               </div>
 
