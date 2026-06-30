@@ -130,7 +130,7 @@ export default function Hero({ onScrollToForm }: HeroProps) {
         </div>
 
         {/* Base — eletroposto centralizado colado no rodapé */}
-        <div className="relative flex-1 flex items-end justify-center pb-24" aria-hidden="true">
+        <div className="relative flex-1 flex items-end justify-center pb-40" aria-hidden="true">
           {/* Glow azul sutil atrás do carregador */}
           <div
             className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-64 rounded-full pointer-events-none"
