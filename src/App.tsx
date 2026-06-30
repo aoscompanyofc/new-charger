@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import WhyInvest from './components/WhyInvest'
 import FeaturedStation from './components/FeaturedStation'
 import Network from './components/Network'
+import Simulator from './components/Simulator'
 import LeadForm from './components/LeadForm'
 import Footer from './components/Footer'
 
@@ -26,6 +27,7 @@ export default function App() {
       <div ref={networkRef}>
         <Network />
       </div>
+      <Simulator />
       <div ref={formRef}>
         <LeadForm />
       </div>
