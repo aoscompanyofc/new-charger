@@ -115,27 +115,53 @@ export default function FeaturedStation({ onScrollToNetwork }: FeaturedStationPr
           </div>
         </div>
 
-        {/* Projeções — tipografia grande, sem cards */}
+        {/* Projeções — cards */}
         <div className="border-t border-white/8 pt-14 mb-14">
           <p className="text-white/25 text-[10px] uppercase tracking-[0.3em] mb-10">Projeção de rentabilidade</p>
-          <div ref={projRef} className="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/8">
+          <div ref={projRef} className="grid sm:grid-cols-3 gap-4">
             {projections.map((proj) => (
               <div
                 key={proj.label}
                 data-proj
-                className={`py-8 sm:py-0 sm:px-10 first:sm:pl-0 last:sm:pr-0 will-change-transform ${prefersReduced ? '' : 'gsap-hidden'}`}
+                className={`relative rounded-2xl p-6 lg:p-8 will-change-transform overflow-hidden transition-colors duration-300
+                  ${proj.featured
+                    ? 'bg-brand-blue/10 border border-brand-blue/30'
+                    : 'bg-white/3 border border-white/8 hover:border-white/16'
+                  } ${prefersReduced ? '' : 'gsap-hidden'}`}
               >
-                <div className="flex items-center gap-2 mb-4">
-                  {proj.featured && <span className="w-1 h-1 rounded-full bg-brand-blue" />}
-                  <p className={`text-[10px] font-bold uppercase tracking-[0.25em] ${proj.featured ? 'text-brand-blue' : 'text-white/30'}`}>
-                    {proj.label}
-                  </p>
+                {/* Glow de fundo no destaque */}
+                {proj.featured && (
+                  <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-brand-blue/15 blur-2xl pointer-events-none" />
+                )}
+
+                {/* Topo — label + horas */}
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center gap-2">
+                    {proj.featured && <span className="w-1.5 h-1.5 rounded-full bg-brand-blue animate-pulse" />}
+                    <p className={`text-[10px] font-bold uppercase tracking-[0.3em] ${proj.featured ? 'text-brand-blue' : 'text-white/35'}`}>
+                      {proj.label}
+                    </p>
+                  </div>
+                  <span className={`text-[10px] font-mono px-2.5 py-1 rounded-full border ${
+                    proj.featured ? 'border-brand-blue/30 text-brand-blue/70 bg-brand-blue/10' : 'border-white/8 text-white/25 bg-white/4'
+                  }`}>
+                    {proj.hours}
+                  </span>
                 </div>
-                <p className="text-white/30 text-xs mb-3">{proj.hours}</p>
-                <div className="flex items-baseline gap-0.5">
-                  <span className={`font-anton text-3xl lg:text-4xl ${proj.featured ? 'text-white' : 'text-white/60'}`}>{proj.value}</span>
-                  <span className="text-white/30 text-sm">{proj.cents}</span>
+
+                {/* Divisor */}
+                <div className={`w-8 h-px mb-5 ${proj.featured ? 'bg-brand-blue/40' : 'bg-white/10'}`} />
+
+                {/* Valor */}
+                <div className="flex items-baseline gap-1 mb-2">
+                  <span className={`text-xs font-bold ${proj.featured ? 'text-white/50' : 'text-white/25'}`}>R$</span>
+                  <span className={`font-anton text-3xl lg:text-[2.4rem] leading-none ${proj.featured ? 'text-white' : 'text-white/55'}`}>
+                    {proj.value.replace('R$ ', '')}
+                  </span>
                 </div>
+                <p className={`text-[10px] uppercase tracking-[0.2em] ${proj.featured ? 'text-white/35' : 'text-white/20'}`}>
+                  por mês / cota
+                </p>
               </div>
             ))}
           </div>
