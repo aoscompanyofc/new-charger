@@ -1,4 +1,4 @@
-import { IconPhone, IconMail, IconGlobe } from './Icons'
+import { IconPhone, IconMail, IconGlobe, IconMapPin } from './Icons'
 
 const WHATSAPP_URL =
   'https://wa.me/5531997328451?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20conhecer%20as%20oportunidades%20de%20investimento%20nos%20eletropostos%20da%20NewCharged.'
@@ -92,6 +92,14 @@ export default function Footer({ onScrollToForm }: FooterProps) {
                   <IconGlobe size={13} className="text-brand-blue flex-shrink-0" />
                   newengenharia.com.br
                 </a>
+                <div className="flex items-start gap-3 text-white/80 text-sm">
+                  <IconMapPin size={13} className="text-brand-blue flex-shrink-0 mt-0.5" />
+                  <span className="leading-relaxed">
+                    Rua Radeck Muzzi, n°206<br />
+                    Santa Amélia, Belo Horizonte – MG<br />
+                    CEP 31550-380
+                  </span>
+                </div>
               </div>
             </div>
           </div>
