@@ -97,11 +97,10 @@ export default function Footer({ onScrollToForm }: FooterProps) {
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-white/8 mt-10 pt-7 flex flex-col sm:flex-row justify-between items-center gap-3">
+          <div className="border-t border-white/8 mt-10 pt-7 flex items-center justify-center">
             <p className="text-white/50 text-[10px] uppercase tracking-[0.2em]">
               © 2026 NEW Engenharia e Energia · Todos os direitos reservados
             </p>
-            <p className="text-white/40 text-[10px]">CNPJ: XX.XXX.XXX/XXXX-XX</p>
           </div>
         </div>
       </div>
