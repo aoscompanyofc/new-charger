@@ -66,12 +66,6 @@ export default function FeaturedStation({ onScrollToNetwork }: FeaturedStationPr
             >
               Rodoviária de Belo Horizonte
             </h2>
-            <div className="flex items-center gap-2 pb-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
-              <span className="text-amber-400/80 text-[10px] font-bold uppercase tracking-[0.25em]">
-                Inauguração em 10 dias
-              </span>
-            </div>
           </div>
         </div>
 
