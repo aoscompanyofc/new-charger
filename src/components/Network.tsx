@@ -68,7 +68,7 @@ const stations: Station[] = [
     location: 'Barreiro — BH',
     description: 'Funcionamento 24h em ponto com banco, academia, supermercado e comércio em geral no Barreiro.',
     forecast: 'Em prospecção',
-    img: '/images/granvitta-comercial.png',
+    img: '/images/granvitta-comercial.webp',
   },
   {
     num: '08',
@@ -84,7 +84,7 @@ const stations: Station[] = [
     location: 'Centro — BH',
     description: 'Estacionamento no coração gastronômico e turístico do Centro, com eventos, arte e comércio em geral.',
     forecast: 'Em prospecção',
-    img: '/images/mercado-novo.png',
+    img: '/images/mercado-novo.jpg',
   },
   {
     num: '10',
@@ -116,7 +116,7 @@ const stations: Station[] = [
     location: 'Belvedere — Nova Lima',
     description: 'Estacionamento com supermercado, Araujo e forte oferta gastronômica em Nova Lima.',
     forecast: 'Em prospecção',
-    img: '/images/verde-mar-belvedere.png',
+    img: '/images/verde-mar-belvedere.jpg',
   },
   {
     num: '14',
