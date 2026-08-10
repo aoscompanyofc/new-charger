@@ -132,7 +132,7 @@ const stations: Station[] = [
     location: 'Santa Amélia — BH',
     description: 'Banco, feira do Minas Shopping, padaria, restaurantes e sorveteria em ponto de forte gastronomia.',
     forecast: 'Em prospecção',
-    img: '/images/mall-av-portugal.png',
+    img: '/images/mall-av-portugal.webp',
   },
   {
     num: '16',
