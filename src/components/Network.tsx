@@ -140,7 +140,7 @@ const stations: Station[] = [
     location: 'Cidade Jardim — BH',
     description: 'Supermercado, farmácia, hotéis, academia, alimentação e banco na Cidade Jardim.',
     forecast: 'Em prospecção',
-    img: '/images/epa-cidade-jardim.png',
+    img: '/images/epa-cidade-jardim.jpg',
   },
   {
     num: '17',
