@@ -69,7 +69,7 @@ const stations: Station[] = [
     location: 'Santa Efigênia — BH',
     description: 'Calçada e estacionamento em polo de atacarejo e supermercados, cercado por Araujo, CNR e salas comerciais.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/andradas-multicenter.png',
   },
   {
     num: '08',
@@ -77,7 +77,7 @@ const stations: Station[] = [
     location: 'Barreiro — BH',
     description: 'Funcionamento 24h em ponto com banco, academia, supermercado e comércio em geral no Barreiro.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/granvitta-comercial.png',
   },
   {
     num: '09',
@@ -85,7 +85,7 @@ const stations: Station[] = [
     location: 'Luxemburgo — BH',
     description: 'Estacionamento em polo de supermercado, Araujo, academia, alimentação, escola e petshop no Luxemburgo.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/woods-verde-mar-luxemburgo.png',
   },
   {
     num: '10',
@@ -93,7 +93,7 @@ const stations: Station[] = [
     location: 'Centro — BH',
     description: 'Estacionamento no coração gastronômico e turístico do Centro, com eventos, arte e comércio em geral.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/mercado-novo.png',
   },
   {
     num: '11',
@@ -101,7 +101,7 @@ const stations: Station[] = [
     location: 'Estoril — BH',
     description: 'Funcionamento 24h com supermercado, Araujo, concessionárias e forte fluxo de alimentação e comércio.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/epa-estoril.png',
   },
   {
     num: '12',
@@ -109,7 +109,7 @@ const stations: Station[] = [
     location: 'Castelo — BH',
     description: 'Funcionamento 24h em mall com supermercado, petshop, alimentação, lotérica e salão.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/epa-castelo.png',
   },
   {
     num: '13',
@@ -117,7 +117,7 @@ const stations: Station[] = [
     location: 'Venda Nova — BH',
     description: 'Banco, salão, alimentação, Araujo, escola e consultórios em polo de comércio e serviços de Venda Nova.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/luna-street-mall.png',
   },
   {
     num: '14',
@@ -125,7 +125,7 @@ const stations: Station[] = [
     location: 'Belvedere — Nova Lima',
     description: 'Estacionamento com supermercado, Araujo e forte oferta gastronômica em Nova Lima.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/verde-mar-belvedere.png',
   },
   {
     num: '15',
@@ -133,7 +133,7 @@ const stations: Station[] = [
     location: 'Santo Agostinho — BH',
     description: 'Estacionamento com supermercado, Araujo, alimentação e proximidade com a Assembleia Legislativa.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/epa-santo-agostinho.png',
   },
   {
     num: '16',
@@ -141,7 +141,7 @@ const stations: Station[] = [
     location: 'Santa Amélia — BH',
     description: 'Banco, feira do Minas Shopping, padaria, restaurantes e sorveteria em ponto de forte gastronomia.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/mall-av-portugal.png',
   },
   {
     num: '17',
@@ -149,7 +149,7 @@ const stations: Station[] = [
     location: 'Cidade Jardim — BH',
     description: 'Supermercado, farmácia, hotéis, academia, alimentação e banco na Cidade Jardim.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/epa-cidade-jardim.png',
   },
   {
     num: '18',
@@ -157,7 +157,7 @@ const stations: Station[] = [
     location: 'Ribeirão das Neves — MG',
     description: 'Funcionamento 24h em polo de atacarejo, supermercados, Araujo e salas comerciais.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/shopping-justinopolis.png',
   },
   {
     num: '19',
@@ -165,7 +165,7 @@ const stations: Station[] = [
     location: 'Angola — Betim',
     description: 'Shopping com supermercado, cinema, praça de alimentação e banco em Betim.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/betim-shopping.png',
   },
   {
     num: '20',
@@ -173,7 +173,7 @@ const stations: Station[] = [
     location: 'Alphaville — Nova Lima',
     description: 'Restaurantes, eventos culturais, escolas e faculdades no polo comercial de Alphaville.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/alphaville-centro-comercial.png',
   },
   {
     num: '21',
@@ -181,7 +181,7 @@ const stations: Station[] = [
     location: 'Ouro Preto — BH',
     description: 'Estacionamento com supermercado, banco, salão, petshop, alimentação e farmácia.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/vettore-mall-fleming.png',
   },
   {
     num: '22',
@@ -189,7 +189,7 @@ const stations: Station[] = [
     location: 'Asteca — Santa Luzia',
     description: 'Posto de combustível 24h a dois quarteirões da Av. Brasília, com clínicas, óticas e farmácia.',
     forecast: 'Em prospecção',
-    img: '/images/placeholder-eletroposto.jpg',
+    img: '/images/posto-luziense.png',
   },
 ]
 
