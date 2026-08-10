@@ -148,7 +148,7 @@ const stations: Station[] = [
     location: 'Ribeirão das Neves — MG',
     description: 'Funcionamento 24h em polo de atacarejo, supermercados, Araujo e salas comerciais.',
     forecast: 'Em prospecção',
-    img: '/images/shopping-justinopolis.png',
+    img: '/images/shopping-justinopolis.jpg',
   },
   {
     num: '18',
@@ -156,7 +156,7 @@ const stations: Station[] = [
     location: 'Angola — Betim',
     description: 'Shopping com supermercado, cinema, praça de alimentação e banco em Betim.',
     forecast: 'Em prospecção',
-    img: '/images/betim-shopping.png',
+    img: '/images/betim-shopping.webp',
   },
   {
     num: '19',
