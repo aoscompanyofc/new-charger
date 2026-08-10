@@ -60,7 +60,7 @@ const stations: Station[] = [
     location: 'Santa Efigênia — BH',
     description: 'Calçada e estacionamento em polo de atacarejo e supermercados, cercado por Araujo, CNR e salas comerciais.',
     forecast: 'Em prospecção',
-    img: '/images/andradas-multicenter.png',
+    img: '/images/andradas-multicenter.webp',
   },
   {
     num: '07',
@@ -92,7 +92,7 @@ const stations: Station[] = [
     location: 'Estoril — BH',
     description: 'Funcionamento 24h com supermercado, Araujo, concessionárias e forte fluxo de alimentação e comércio.',
     forecast: 'Em prospecção',
-    img: '/images/epa-estoril.png',
+    img: '/images/epa-estoril.jpg',
   },
   {
     num: '11',
