@@ -164,7 +164,7 @@ const stations: Station[] = [
     location: 'Alphaville — Nova Lima',
     description: 'Restaurantes, eventos culturais, escolas e faculdades no polo comercial de Alphaville.',
     forecast: 'Em prospecção',
-    img: '/images/alphaville-centro-comercial.png',
+    img: '/images/alphaville-centro-comercial.jpg',
   },
   {
     num: '20',
