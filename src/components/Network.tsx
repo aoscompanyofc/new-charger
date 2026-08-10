@@ -48,15 +48,6 @@ const stations: Station[] = [
   },
   {
     num: '05',
-    name: 'Fast Tênis Pampulha',
-    location: 'Pampulha — BH',
-    description: 'Uma das regiões mais valorizadas de BH, público aderente ao perfil do veículo elétrico.',
-    forecast: 'Jul. 2026',
-    img: '/images/fast-tenis.jpg',
-    highlight: 'Alto poder aquisitivo',
-  },
-  {
-    num: '06',
     name: 'Vettore Mall',
     location: 'Belo Horizonte — MG',
     description: 'Hub estratégico próximo ao Mineirão, Mineirinho e região hospitalar.',
@@ -64,7 +55,7 @@ const stations: Station[] = [
     img: '/images/vettore-mall.webp',
   },
   {
-    num: '07',
+    num: '06',
     name: 'Andradas Multicenter',
     location: 'Santa Efigênia — BH',
     description: 'Calçada e estacionamento em polo de atacarejo e supermercados, cercado por Araujo, CNR e salas comerciais.',
@@ -72,7 +63,7 @@ const stations: Station[] = [
     img: '/images/andradas-multicenter.png',
   },
   {
-    num: '08',
+    num: '07',
     name: 'Granvitta Comercial',
     location: 'Barreiro — BH',
     description: 'Funcionamento 24h em ponto com banco, academia, supermercado e comércio em geral no Barreiro.',
@@ -80,7 +71,7 @@ const stations: Station[] = [
     img: '/images/granvitta-comercial.png',
   },
   {
-    num: '09',
+    num: '08',
     name: 'Woods | Verde Mar',
     location: 'Luxemburgo — BH',
     description: 'Estacionamento em polo de supermercado, Araujo, academia, alimentação, escola e petshop no Luxemburgo.',
@@ -88,7 +79,7 @@ const stations: Station[] = [
     img: '/images/woods-verde-mar-luxemburgo.png',
   },
   {
-    num: '10',
+    num: '09',
     name: 'Mercado Novo',
     location: 'Centro — BH',
     description: 'Estacionamento no coração gastronômico e turístico do Centro, com eventos, arte e comércio em geral.',
@@ -96,7 +87,7 @@ const stations: Station[] = [
     img: '/images/mercado-novo.png',
   },
   {
-    num: '11',
+    num: '10',
     name: 'EPA Estoril',
     location: 'Estoril — BH',
     description: 'Funcionamento 24h com supermercado, Araujo, concessionárias e forte fluxo de alimentação e comércio.',
@@ -104,7 +95,7 @@ const stations: Station[] = [
     img: '/images/epa-estoril.png',
   },
   {
-    num: '12',
+    num: '11',
     name: 'EPA Castelo',
     location: 'Castelo — BH',
     description: 'Funcionamento 24h em mall com supermercado, petshop, alimentação, lotérica e salão.',
@@ -112,7 +103,7 @@ const stations: Station[] = [
     img: '/images/epa-castelo.png',
   },
   {
-    num: '13',
+    num: '12',
     name: 'Luna Street Mall',
     location: 'Venda Nova — BH',
     description: 'Banco, salão, alimentação, Araujo, escola e consultórios em polo de comércio e serviços de Venda Nova.',
@@ -120,7 +111,7 @@ const stations: Station[] = [
     img: '/images/luna-street-mall.png',
   },
   {
-    num: '14',
+    num: '13',
     name: 'Verde Mar Belvedere',
     location: 'Belvedere — Nova Lima',
     description: 'Estacionamento com supermercado, Araujo e forte oferta gastronômica em Nova Lima.',
@@ -128,7 +119,7 @@ const stations: Station[] = [
     img: '/images/verde-mar-belvedere.png',
   },
   {
-    num: '15',
+    num: '14',
     name: 'EPA Santo Agostinho',
     location: 'Santo Agostinho — BH',
     description: 'Estacionamento com supermercado, Araujo, alimentação e proximidade com a Assembleia Legislativa.',
@@ -136,7 +127,7 @@ const stations: Station[] = [
     img: '/images/epa-santo-agostinho.png',
   },
   {
-    num: '16',
+    num: '15',
     name: 'Mall Av. Portugal',
     location: 'Santa Amélia — BH',
     description: 'Banco, feira do Minas Shopping, padaria, restaurantes e sorveteria em ponto de forte gastronomia.',
@@ -144,7 +135,7 @@ const stations: Station[] = [
     img: '/images/mall-av-portugal.png',
   },
   {
-    num: '17',
+    num: '16',
     name: 'EPA Cidade Jardim',
     location: 'Cidade Jardim — BH',
     description: 'Supermercado, farmácia, hotéis, academia, alimentação e banco na Cidade Jardim.',
@@ -152,7 +143,7 @@ const stations: Station[] = [
     img: '/images/epa-cidade-jardim.png',
   },
   {
-    num: '18',
+    num: '17',
     name: 'Shopping Justinópolis',
     location: 'Ribeirão das Neves — MG',
     description: 'Funcionamento 24h em polo de atacarejo, supermercados, Araujo e salas comerciais.',
@@ -160,7 +151,7 @@ const stations: Station[] = [
     img: '/images/shopping-justinopolis.png',
   },
   {
-    num: '19',
+    num: '18',
     name: 'Betim Shopping',
     location: 'Angola — Betim',
     description: 'Shopping com supermercado, cinema, praça de alimentação e banco em Betim.',
@@ -168,7 +159,7 @@ const stations: Station[] = [
     img: '/images/betim-shopping.png',
   },
   {
-    num: '20',
+    num: '19',
     name: 'Alphaville Centro Comercial',
     location: 'Alphaville — Nova Lima',
     description: 'Restaurantes, eventos culturais, escolas e faculdades no polo comercial de Alphaville.',
@@ -176,7 +167,7 @@ const stations: Station[] = [
     img: '/images/alphaville-centro-comercial.png',
   },
   {
-    num: '21',
+    num: '20',
     name: 'Vettore Mall Fleming',
     location: 'Ouro Preto — BH',
     description: 'Estacionamento com supermercado, banco, salão, petshop, alimentação e farmácia.',
@@ -184,7 +175,7 @@ const stations: Station[] = [
     img: '/images/vettore-mall-fleming.png',
   },
   {
-    num: '22',
+    num: '21',
     name: 'Posto Luziense',
     location: 'Asteca — Santa Luzia',
     description: 'Posto de combustível 24h a dois quarteirões da Av. Brasília, com clínicas, óticas e farmácia.',
@@ -321,7 +312,7 @@ export default function Network() {
           </div>
           <div className="max-w-xs">
             <p className="text-white/35 text-sm leading-relaxed">
-              22 pontos estratégicos com alto fluxo, selecionados para maximizar a rentabilidade dos investidores.
+              21 pontos estratégicos com alto fluxo, selecionados para maximizar a rentabilidade dos investidores.
             </p>
           </div>
         </div>
