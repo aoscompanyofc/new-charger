@@ -100,7 +100,7 @@ const stations: Station[] = [
     location: 'Castelo — BH',
     description: 'Funcionamento 24h em mall com supermercado, petshop, alimentação, lotérica e salão.',
     forecast: 'Em prospecção',
-    img: '/images/epa-castelo.png',
+    img: '/images/epa-castelo.webp',
   },
   {
     num: '12',
