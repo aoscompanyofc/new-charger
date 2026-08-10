@@ -108,7 +108,7 @@ const stations: Station[] = [
     location: 'Venda Nova — BH',
     description: 'Banco, salão, alimentação, Araujo, escola e consultórios em polo de comércio e serviços de Venda Nova.',
     forecast: 'Em prospecção',
-    img: '/images/luna-street-mall.png',
+    img: '/images/luna-street-mall.webp',
   },
   {
     num: '13',
@@ -124,7 +124,7 @@ const stations: Station[] = [
     location: 'Santo Agostinho — BH',
     description: 'Estacionamento com supermercado, Araujo, alimentação e proximidade com a Assembleia Legislativa.',
     forecast: 'Em prospecção',
-    img: '/images/epa-santo-agostinho.png',
+    img: '/images/epa-santo-agostinho.webp',
   },
   {
     num: '15',
