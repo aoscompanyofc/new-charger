@@ -172,7 +172,7 @@ const stations: Station[] = [
     location: 'Ouro Preto — BH',
     description: 'Estacionamento com supermercado, banco, salão, petshop, alimentação e farmácia.',
     forecast: 'Em prospecção',
-    img: '/images/vettore-mall-fleming.png',
+    img: '/images/vettore-mall-fleming.webp',
   },
   {
     num: '21',
@@ -180,7 +180,7 @@ const stations: Station[] = [
     location: 'Asteca — Santa Luzia',
     description: 'Posto de combustível 24h a dois quarteirões da Av. Brasília, com clínicas, óticas e farmácia.',
     forecast: 'Em prospecção',
-    img: '/images/posto-luziense.png',
+    img: '/images/posto-luziense.jpg',
   },
 ]
 
