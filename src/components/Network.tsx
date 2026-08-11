@@ -27,7 +27,7 @@ const stations: Station[] = [
     name: 'Mercado Central BH',
     location: 'Belo Horizonte — MG',
     description: 'Polo turístico e gastronômico, um dos maiores centros de consumo de Minas Gerais.',
-    forecast: 'Jul. 2026',
+    forecast: '2º sem. 2026',
     img: '/images/mercado-central.jpg',
   },
   {
@@ -35,7 +35,7 @@ const stations: Station[] = [
     name: 'Feira dos Produtores',
     location: 'Belo Horizonte — MG',
     description: 'Fluxo recorrente de consumidores e comerciantes com alto potencial de fidelização.',
-    forecast: 'Jul. 2026',
+    forecast: '2º sem. 2026',
     img: '/images/feira-produtores.jpg',
   },
   {
@@ -43,7 +43,7 @@ const stations: Station[] = [
     name: 'Posto Cinco Mil',
     location: 'Região Metropolitana — MG',
     description: 'Modelo híbrido — abastecimento convencional e mobilidade elétrica integrados.',
-    forecast: 'Jul. 2026',
+    forecast: '2º sem. 2026',
     img: '/images/posto-cinco-mil.jpg',
   },
   {
@@ -51,7 +51,7 @@ const stations: Station[] = [
     name: 'Vettore Mall',
     location: 'Belo Horizonte — MG',
     description: 'Hub estratégico próximo ao Mineirão, Mineirinho e região hospitalar.',
-    forecast: 'Jul. 2026',
+    forecast: '2º sem. 2026',
     img: '/images/vettore-mall.webp',
   },
   {
@@ -59,7 +59,7 @@ const stations: Station[] = [
     name: 'Andradas Multicenter',
     location: 'Santa Efigênia — BH',
     description: 'Calçada e estacionamento em polo de atacarejo e supermercados, cercado por Araujo, CNR e salas comerciais.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/andradas-multicenter.webp',
   },
   {
@@ -67,7 +67,7 @@ const stations: Station[] = [
     name: 'Granvitta Comercial',
     location: 'Barreiro — BH',
     description: 'Funcionamento 24h em ponto com banco, academia, supermercado e comércio em geral no Barreiro.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/granvitta-comercial.webp',
   },
   {
@@ -75,7 +75,7 @@ const stations: Station[] = [
     name: 'Woods | Verde Mar',
     location: 'Luxemburgo — BH',
     description: 'Estacionamento em polo de supermercado, Araujo, academia, alimentação, escola e petshop no Luxemburgo.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/woods-verde-mar-luxemburgo.png',
   },
   {
@@ -83,7 +83,7 @@ const stations: Station[] = [
     name: 'Mercado Novo',
     location: 'Centro — BH',
     description: 'Estacionamento no coração gastronômico e turístico do Centro, com eventos, arte e comércio em geral.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/mercado-novo.jpg',
   },
   {
@@ -91,7 +91,7 @@ const stations: Station[] = [
     name: 'EPA Estoril',
     location: 'Estoril — BH',
     description: 'Funcionamento 24h com supermercado, Araujo, concessionárias e forte fluxo de alimentação e comércio.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/epa-estoril.jpg',
   },
   {
@@ -99,7 +99,7 @@ const stations: Station[] = [
     name: 'EPA Castelo',
     location: 'Castelo — BH',
     description: 'Funcionamento 24h em mall com supermercado, petshop, alimentação, lotérica e salão.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/epa-castelo.webp',
   },
   {
@@ -107,7 +107,7 @@ const stations: Station[] = [
     name: 'Luna Street Mall',
     location: 'Venda Nova — BH',
     description: 'Banco, salão, alimentação, Araujo, escola e consultórios em polo de comércio e serviços de Venda Nova.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/luna-street-mall.webp',
   },
   {
@@ -115,7 +115,7 @@ const stations: Station[] = [
     name: 'Verde Mar Belvedere',
     location: 'Belvedere — Nova Lima',
     description: 'Estacionamento com supermercado, Araujo e forte oferta gastronômica em Nova Lima.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/verde-mar-belvedere.jpg',
   },
   {
@@ -123,7 +123,7 @@ const stations: Station[] = [
     name: 'EPA Santo Agostinho',
     location: 'Santo Agostinho — BH',
     description: 'Estacionamento com supermercado, Araujo, alimentação e proximidade com a Assembleia Legislativa.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/epa-santo-agostinho.webp',
   },
   {
@@ -131,7 +131,7 @@ const stations: Station[] = [
     name: 'Mall Av. Portugal',
     location: 'Santa Amélia — BH',
     description: 'Banco, feira do Minas Shopping, padaria, restaurantes e sorveteria em ponto de forte gastronomia.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/mall-av-portugal.webp',
   },
   {
@@ -139,7 +139,7 @@ const stations: Station[] = [
     name: 'EPA Cidade Jardim',
     location: 'Cidade Jardim — BH',
     description: 'Supermercado, farmácia, hotéis, academia, alimentação e banco na Cidade Jardim.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/epa-cidade-jardim.jpg',
   },
   {
@@ -147,7 +147,7 @@ const stations: Station[] = [
     name: 'Shopping Justinópolis',
     location: 'Ribeirão das Neves — MG',
     description: 'Funcionamento 24h em polo de atacarejo, supermercados, Araujo e salas comerciais.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/shopping-justinopolis.jpg',
   },
   {
@@ -155,7 +155,7 @@ const stations: Station[] = [
     name: 'Betim Shopping',
     location: 'Angola — Betim',
     description: 'Shopping com supermercado, cinema, praça de alimentação e banco em Betim.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/betim-shopping.webp',
   },
   {
@@ -163,7 +163,7 @@ const stations: Station[] = [
     name: 'Alphaville Centro Comercial',
     location: 'Alphaville — Nova Lima',
     description: 'Restaurantes, eventos culturais, escolas e faculdades no polo comercial de Alphaville.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/alphaville-centro-comercial.jpg',
   },
   {
@@ -171,7 +171,7 @@ const stations: Station[] = [
     name: 'Vettore Mall Fleming',
     location: 'Ouro Preto — BH',
     description: 'Estacionamento com supermercado, banco, salão, petshop, alimentação e farmácia.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/vettore-mall-fleming.webp',
   },
   {
@@ -179,7 +179,7 @@ const stations: Station[] = [
     name: 'Posto Luziense',
     location: 'Asteca — Santa Luzia',
     description: 'Posto de combustível 24h a dois quarteirões da Av. Brasília, com clínicas, óticas e farmácia.',
-    forecast: 'Em prospecção',
+    forecast: '2º sem. 2026',
     img: '/images/posto-luziense.jpg',
   },
 ]
