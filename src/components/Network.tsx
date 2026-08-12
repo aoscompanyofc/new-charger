@@ -180,7 +180,7 @@ const stations: Station[] = [
     location: 'Asteca — Santa Luzia',
     description: 'Posto de combustível 24h a dois quarteirões da Av. Brasília, com clínicas, óticas e farmácia.',
     forecast: '2º sem. 2026',
-    img: '/images/posto-luziense.jpg',
+    img: '/images/posto-luziense.png',
   },
 ]
 
