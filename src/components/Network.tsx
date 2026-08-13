@@ -146,7 +146,7 @@ const stations: Station[] = [
     num: '17',
     name: 'Shopping Justinópolis',
     location: 'Ribeirão das Neves — MG',
-    description: 'Funcionamento 24h em polo de atacarejo, supermercados, Araujo e salas comerciais.',
+    description: 'Supermercados BH, Americanas, UPA, alimentação, lotérica, comércio em geral.',
     forecast: '2º sem. 2026',
     img: '/images/shopping-justinopolis.jpg',
   },
